@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap');
 
 @media (max-width:1980px){
-    /*home*/
+    /*general*/
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'lato', sans-serif;
+    }
     body {
         background: linear-gradient(rgba(5, 7, 12, 0.651),rgba(5, 7, 12, 0.74)), url("img/Ballroom-2-2.jpg");
         padding: 50px;
         padding-bottom: 70px;
     }
+    p, div, span{
+        font-family: 'lato', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*Header*/
     .BarraSup{
         display: flex;
         flex-direction: row;
@@ -55,8 +68,8 @@
         background-color: rgba(0, 0, 0, 0.473);
     }
     nav li:hover{
-        transform: translateY(10%);
-        transition: transform .2s;
+        transform: translateY(5%);
+        transition: transform .1s;
     }
     nav a{
         text-decoration: none;
