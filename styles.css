@@ -3,7 +3,7 @@
 @media (max-width:1980px){
     /*home*/
     body {
-        background: linear-gradient(rgba(5, 7, 12, 0.651),rgba(5, 7, 12, 0.74)), url("Img/Ballroom-2-2.jpg");
+        background: linear-gradient(rgba(5, 7, 12, 0.651),rgba(5, 7, 12, 0.74)), url("img/Ballroom-2-2.jpg");
         padding: 50px;
         padding-bottom: 70px;
     }
