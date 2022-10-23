@@ -1,34 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap');
+
 @media (max-width:1980px){
     /*home*/
     body {
         background: linear-gradient(rgba(5, 7, 12, 0.651),rgba(5, 7, 12, 0.74)), url("Img/Ballroom-2-2.jpg");
         padding: 50px;
-        padding-bottom: 75px;
+        padding-bottom: 70px;
     }
     .BarraSup{
         display: flex;
         flex-direction: row;
-        height: fit-content;
+        justify-content: space-between;
     }
     .BarraSup img{
-        align-self: center;
         min-width: 175px;
         height: 125px;
     }
     .searchBar{
-        width: 60%;
-        align-self: center;
         min-width: 200px;
     }
-    .searchButton {
-        align-self: center;
-    }
     .BarraSup button {
-        align-self: center;
-        flex-grow: 1;
-        width: 15%;
+        min-width: 80px;
         border: 2px solid white;
         border-radius: 10px;
+    }
+    .login .navimg{
+        display: inline-block;
     }
     .searchBar form input{
         width: 100%;
@@ -56,9 +53,7 @@
         border: 2px solid white;
         border-radius: 8px;
         background-color: rgba(0, 0, 0, 0.473);
-
     }
-    
     nav li:hover{
         transform: translateY(10%);
         transition: transform .2s;
@@ -209,20 +204,28 @@
     .copyright {
         display: flex;
         height: 50%;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         
     }
     .copyright div {
-        width: 50%;
+        width: 100%;
         color: white;
         align-self: flex-end;
         min-width: 30%;
     }
+    .copyright p{
+        text-align: left;
+        position: absolute;
+        padding-top: 15px;
+    }
     /*home*/
 }
 @media (max-width: 600px) {
-    
+    body{
+        margin: 0;
+        padding: 0;
+    }
     .BarraInf ul li{
     font-size: 3.5vw;
     flex-wrap: wrap;
@@ -235,13 +238,15 @@
     }
     .BarraSup {
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .BarraSup img{
         flex-grow: 1;
         height: 60vw;
+        padding: 20px;
     }
     .searchBar{
-        width: 70%;
         min-width: none;
         margin-top: 10%;
         margin-bottom: 5%;
@@ -259,7 +264,6 @@
     }
     nav li{
         margin: 4px;
-        padding: 5px 20px 5px 20px;
         border: 2px solid white;
         border-radius: 8px;
         background-color: rgba(0, 0, 0, 0.719);
@@ -298,8 +302,13 @@
         width: 20%;
     }
     .copyright{
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         height: 50%;
+    }
+    .copyright p{
+        position: inherit;
+        text-align: center;
     }
     footer {
         height: 250px;
@@ -308,7 +317,7 @@
         width: 50%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-wrap: wrap;
         height: 50%;
         align-content: flex-start;
