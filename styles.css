@@ -1,0 +1,286 @@
+@media (max-width:1980px){
+    /*home*/
+    body {
+        background: linear-gradient(rgba(5, 7, 12, 0.651),rgba(5, 7, 12, 0.74)), url("Img/Ballroom-2-2.jpg");
+        padding: 50px;
+        padding-bottom: 75px;
+    }
+    .NavBar{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin-bottom: 50px;
+    }
+    .BarraSup{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+    .BarraSup img{
+        align-self: center;
+        min-width: 175px;
+        height: 125px;
+    }
+    .searchBar{
+        width: 60%;
+        align-self: center;
+        min-width: 200px;
+    }
+    .searchButton {
+        align-self: center;
+    }
+    .BarraSup button {
+        align-self: center;
+        flex-grow: 1;
+        width: 15%;
+    }
+    .searchBar form input{
+        width: 100%;
+        border-radius: 17px;
+    }
+    .BarraInf{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+    .BarraInf ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: fit-content;
+        width: 100%;
+        margin-top: 2.5%;
+    }
+    .BarraInf ul li{
+        min-width: 15%;
+        flex-grow: 1;
+        font-size: 2.8vw;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+    }
+    #abaut{
+        height: fit-content;
+    }
+    .nav-link{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .Bienvenida{
+        display: flex;
+        margin-bottom: 5%;
+    }
+    .parrBienvenida{
+        width: 40%;
+        color: white;
+    }
+    .imgHotel{
+        width: 60%;
+    }
+    .imgHotel img{
+        width: 100%;
+    }
+    .EventosAtuales{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        padding: 30px;
+    }
+    .EvImportant{
+        display: flex;
+        width: 50%;
+        margin-top: 5%;
+    }
+    .imgEvPri{
+        width: 100%;
+    }
+    .OtrosEvent{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .OEItem{
+        width: 50%;
+        height: 50%;
+    }
+    .imgEvFut{
+        width: 100%;
+        height: 100%;
+    }
+    .EvImportant:hover, .OEItem:hover {
+        opacity: 0.6;
+    }
+    .EventosPasados{
+        display: flex;
+        height: fit-content;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: fit-content;
+    }
+    #carouselExampleControls{
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+    .videoCont{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .videoCont video{
+        width: 100%;
+        padding: 25px;
+    }
+    .carItem{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-top: 5%;
+    }
+    h2{
+        color: white;
+    }
+    h3{
+        color: white;
+    }
+    .parr{
+        height: fit-content;
+        padding: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    footer{
+        display: flex;
+        height: 250px;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+    .Sponsors {
+        display: flex;
+        height: 40%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5%;
+    }
+    .Sponsors img{
+        min-width: 100px;
+    }
+    .social {
+        display: flex;
+        height: 50%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .copyright {
+        display: flex;
+        height: 50%;
+        flex-direction: row;
+        width: 100%;
+        
+    }
+    .copyright div {
+        width: 50%;
+        color: white;
+        align-self: flex-end;
+        min-width: 30%;
+    }
+    /*home*/
+}
+@media (max-width: 600px) {
+    
+    .BarraInf ul li{
+    font-size: 3.5vw;
+    flex-wrap: wrap;
+    }
+    .videoCont img{
+        width: 0%;
+    }
+    .videoCont {
+        width: 100%;
+    }
+    .BarraSup {
+        flex-wrap: wrap;
+    }
+    .BarraSup img{
+        flex-grow: 1;
+        height: 60vw;
+    }
+    .searchBar{
+        width: 70%;
+        min-width: none;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    
+    .Bienvenida{
+        display: flex;
+        flex-direction: column;
+    }
+    .parrBienvenida{
+        width: 100%;
+    }
+    .imgHotel{
+        width: 100%;
+    }
+    .EventosAtuales{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .EvImportant{
+        margin-top: 10%;
+        width: 100%;
+    }
+    .OtrosEvent{
+        margin-top: 20%;
+        width: 100%;
+    }
+    .BarraInf ul{
+        margin-top: 5%;
+    }
+    .Sponsors {
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .Sponsors img{
+        width: 20%;
+    }
+    .copyright{
+        flex-wrap: wrap;
+        height: 50%;
+    }
+    footer {
+        height: 250px;
+    }
+    .social {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 50%;
+        align-content: flex-start;
+    }
+    .social img{
+        width: 20%;
+    }
+    .copy{
+        align-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .searchBar{
+        width: 100%;
+        min-width: none;
+    }
+}
