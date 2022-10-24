@@ -14,9 +14,26 @@
     }
     p, div, span{
         font-family: 'lato', sans-serif;
+        color: rgb(212, 212, 212);
+        font-size: 1.3vw;
     }
     h1, h2, h3, h4, h5, h6{
         font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    h1{
+        font-size: 2.7vw;
+    }
+    h2{
+        font-size: 2.4vw;
+    }
+    h3{
+        color: white;
+        font-size: 2.3vw;
+    }
+    .responsive{
+        width: 100%;
+        height: auto;
     }
 
     /*Header*/
@@ -40,27 +57,30 @@
     .login .navimg{
         display: inline-block;
     }
+    .navimg img{
+        max-width: 300px;
+        max-height: 300px;
+    }
     .searchBar form input{
         width: 100%;
         border-radius: 17px;
     }
     nav ul {
+        padding: 0;
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: right;
         font-family: sans-serif;
-        font-size: 20px;
         font-weight: bold;
         height: fit-content;
         width: 100%;
         margin-top: 2.5%;
     }
-    
     nav li{
         margin: 10px;
         flex-grow: 1;
-        font-size: 2.8vw;
+        font-size: 2vw;
         text-align: center;
         padding: 5px 20px 5px 20px;
         border: 2px solid white;
@@ -75,14 +95,13 @@
         text-decoration: none;
         color: white;
     }
-    #abaut{
-        height: fit-content;
-    }
     .nav-link{
         display: flex;
         width: 100%;
         justify-content: center;
     }
+
+    /*index*/
     .Bienvenida{
         display: flex;
         margin-bottom: 5%;
@@ -96,6 +115,9 @@
     }
     .imgHotel img{
         width: 100%;
+    }
+    .index-title{
+        text-align: center;
     }
     .EventosAtuales{
         display: flex;
@@ -160,12 +182,7 @@
         height: 100%;
         margin-top: 5%;
     }
-    h2{
-        color: white;
-    }
-    h3{
-        color: white;
-    }
+
     .parr{
         height: fit-content;
         padding: 5%;
@@ -174,12 +191,40 @@
         flex-direction: column;
         color: white;
     }
-    footer{
+
+    /*galería*/
+
+    section ul{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        list-style-type: none;
+    }
+    .galeria img{
+        border: 1px solid black;
+    }
+    .galeria-section h3{
+        margin-top: 70px;
+    }
+    .galeria-section h1{
+        margin-top: 70px;
+    }
+
+    .social{
+        padding: 0;
+        margin: 0;
+    }
+    footer, .sponsors, .copyright{
         display: flex;
         height: 250px;
         flex-direction: column;
-        padding: 10px;
         margin-bottom: 25px;
+
+    }
+    footer h3{
+        margin-top: 70px;
     }
     footer ul{
         display: flex;
@@ -187,7 +232,7 @@
         align-items: center;
         list-style-type: none;
         height: 50px;
-
+        padding: 0;
     }
     footer li{
         margin-left: 25px;
@@ -202,7 +247,7 @@
         display: flex;
         height: 40%;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-bottom: 5%;
     }
     .Sponsors img{
@@ -234,14 +279,50 @@
     }
     /*home*/
 }
-@media (max-width: 600px) {
+
+
+@media (max-width: 800px) {
     body{
         margin: 0;
         padding: 0;
     }
-    .BarraInf ul li{
-    font-size: 3.5vw;
-    flex-wrap: wrap;
+    p, div, span{
+        font-size: 20px;
+    }
+    nav ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        font-family: sans-serif;
+        font-weight: bold;
+        height: fit-content;
+        width: 100%;
+        margin-top: 2.5%;
+    }
+    nav li{
+        margin: 10px;
+        flex-grow: 1;
+        font-size: 2vw;
+        text-align: center;
+        padding: 5px 20px 5px 20px;
+        border: 2px solid white;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.473);
+    }
+    nav li:hover{
+        transform: translateY(5%);
+        transition: transform .1s;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav-link{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
     .videoCont img{
         width: 0%;
@@ -274,17 +355,20 @@
         display: flex;
         flex-direction: column;
         height: 200px;
+        padding: 0;
     }
     nav li{
         margin: 4px;
         border: 2px solid white;
         border-radius: 8px;
         background-color: rgba(0, 0, 0, 0.719);
+        font-size: 1rem;
     }
     
     .Bienvenida{
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
     .parrBienvenida{
         width: 100%;
@@ -306,6 +390,10 @@
     }
     .BarraInf ul{
         margin-top: 5%;
+    }
+    /*galeria*/
+    section ul{
+        grid-template-columns: 1fr 1fr;
     }
     .Sponsors {
         height: fit-content;
@@ -342,9 +430,18 @@
         align-items: center;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    body{
+        padding: 20px;
+    }
     .searchBar{
         width: 100%;
         min-width: none;
     }
+
+    /*galería*/
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+
 }
