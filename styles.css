@@ -53,6 +53,7 @@
         min-width: 80px;
         border: 2px solid white;
         border-radius: 10px;
+        align-items: center;
     }
     .login .navimg{
         display: inline-block;
@@ -277,7 +278,35 @@
         position: absolute;
         padding-top: 15px;
     }
-    /*home*/
+    /*contacto*/
+    .contacto-sect ul {
+        list-style-type: none;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "mapa-contacto" "contacto-text";
+    }
+    .mapa-contacto iframe {
+        max-width: 500px;
+    }
+    .contacto-text span {
+        display: block;
+        font-size: 20px;
+    }
+      .formulario form {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid rgba(138, 141, 122, 0.7411764706);
+      }
+      .formulario form div {
+        margin-bottom: 10px;
+      }
+      .formulario form .form-control {
+        background-color: rgba(255, 255, 255, 0.781);
+      }
+      form button{
+        margin: 0;
+      }
 }
 
 
@@ -429,6 +458,24 @@
     .copy{
         align-items: center;
     }
+    /*contacto*/
+    .contacto-sect ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto-sect ul li {
+        margin: 15px;
+    }
+    .contacto-sect {
+        padding: 20px;
+    }
+    .mapa-contacto iframe {
+        width: 100%;
+    }
+    .contacto-text {
+        margin-top: 50px;
+    }
+
 }
 @media (max-width: 500px) {
     body{
@@ -443,5 +490,20 @@
     .galeria{
         grid-template-columns: 1fr;
     }
-
+    /*contacto*/
+    .contacto-sect{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto-sect ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+    .contacto-sect ul li {
+        margin: 0px;
+    }
+    .mapa-contacto iframe {
+        max-width: 340px;
+    }
 }
