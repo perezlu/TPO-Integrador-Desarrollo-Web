@@ -321,6 +321,9 @@
         margin-top: 70px;
     }
 
+    .cursos-cont{
+        margin-top: 100px;
+    }
     .curso{
         display: flex;
         height: 400px;
@@ -334,7 +337,7 @@
     }
     .curso .descripcionCurso {
         width: 60%;
-        padding: 50px;
+        padding: 20px;
     }
     .curso .imgCurso img{
         width: 100%;
@@ -342,7 +345,10 @@
     }
 
     .About{
-        padding: 50px;
+        padding: 0 50px;
+    }
+    .About h2{
+        margin-top: 50px;
     }
 }
 
@@ -525,7 +531,6 @@
     }
     .curso .descripcionCurso {
         width: 100%;
-        padding: 50px;
     }
     .login {
         display: flex;
