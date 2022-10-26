@@ -284,6 +284,12 @@
     }
     .galeria img{
         border: 1px solid black;
+        height: 100%;
+    }
+    .galeria img:hover{
+        transform: scale(1.4);
+        transition-property: all;
+        transition-duration: 0.7s;
     }
     .galeria img:hover{
         transform: scale(1.2);
